@@ -2,7 +2,7 @@ import serial
 import json
 
 # Configurar porta serial
-ser = serial.Serial('COM12', 9600)  # Substitua 'COM1' pela porta serial que você está usando
+ser = serial.Serial('COM10', 9600)  # Substitua 'COM1' pela porta serial que você está usando
 
 while True:
     # Ler linha da porta serial

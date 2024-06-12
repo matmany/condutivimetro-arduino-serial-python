@@ -6,11 +6,11 @@ void setup() {
 }
 
 void loop() {
-  sendJsonToSerial(25.0, 99.9);
+  enviaJsonSerial(25.0, 99.9);
   delay(1000);
 }
 
-void sendJsonToSerial(float temperatura, float condutividade) {
+void enviaJsonSerial(float temperatura, float condutividade) {
   StaticJsonDocument<100> doc;
   doc["temp"] = temperatura;
   doc["condu"] = condutividade;
